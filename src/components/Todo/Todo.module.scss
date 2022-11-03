@@ -1,0 +1,14 @@
+.todo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  align-items: center;
+  gap: 0.5rem;
+
+  &_remove {
+    margin-left: auto;
+    width: 0.9rem;
+    height: 1rem;
+  }
+}

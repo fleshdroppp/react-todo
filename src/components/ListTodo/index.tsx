@@ -1,11 +1,12 @@
 import React from 'react';
 
 import styles from './ListTodo.module.scss';
+import Todo from "../Todo";
 
 const ListTodo = () => {
   const todos = [{
     id: 1,
-    title: 'make todo',
+    title: 'makedddddddddddddddddddddddddd todo',
     isDoing: true,
   }, {
     id: 2,
@@ -23,7 +24,7 @@ const ListTodo = () => {
         Your TODO list:
       </div>
       <div className={styles.todos_list__content}>
-        {todos.map(todo => <div>{todo.title}</div>)}
+        {todos.map(todo => <Todo {...todo}/>)}
       </div>
     </div>
   );
